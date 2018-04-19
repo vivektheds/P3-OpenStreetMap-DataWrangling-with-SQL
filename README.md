@@ -433,12 +433,12 @@ pprint.pprint(dict(LA_zipcode))
      'CA': set(['CA 90012'])}
     
 
-#### We have handled this inconsistency in Audit.py
+#### We have handled this inconsistency in LA OSM Audit.ipynb
 
 ## 3. Database schema preparation
 After auditing I have converted OSM xml data to CSV format then imported these CSV files into sqlite database.
 
-I have used **'LA OSM database.py'** file to convert xml document data into CSV then created tables for each CSV files and loaded that data into database table which helps to explore data more efficiently.
+I have used **'LA OSM database.ipynb'** file to convert xml document data into CSV then created tables for each CSV files and loaded that data into database table which helps to explore data more efficiently.
 
 ### Los Angeles Map Data overview
 
@@ -535,6 +535,16 @@ sqlite> select value, count(value) count from nodes_tags where key='cuisine' gro
 From this entire data wrangling process I realized how important is to clean and parse data ,and most importantly to make data in tablular format which makes data exploration easier.
 Moreover openstreetmap is open source project and some of the users can make some mistakes while contributing the map data, hence data cleansing gets very important in order to get rid of human errors.
 
+
+## Files used:
+
+1. **LA OSM Audit.ipynb:** Inconsistencies in map data handled here.
+2. **LA OSM database.ipynb:**- build CSV files from OSM and build database of the CSV files with the repective table names.
+3. **README.md:**- contains details on the data wrangling and analysis process.
+4. **LosAngeles.db:**- database file which is used to load schema into database.
+5. **All CSV Files:**- nodes.csv, nodes_tags.csv,ways.csv,ways_nodes.csv and ways_tags.csv are CSV files which are transformed                          from OSM xml data then these files are used to create db schema.
+
+5. **LA_sample.zip:**- An .osm file containing a sample part of the LA map which I used.
 
 
 ```python
