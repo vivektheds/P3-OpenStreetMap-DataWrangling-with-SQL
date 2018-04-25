@@ -535,6 +535,16 @@ sqlite> select value, count(value) count from nodes_tags where key='cuisine' gro
 From this entire data wrangling process I realized how important is to clean and parse data ,and most importantly to make data in tablular format which makes data exploration easier.
 Moreover openstreetmap is open source project and some of the users can make some mistakes while contributing the map data, hence data cleansing gets very important in order to get rid of human errors.
 
+## Additional Ideas:
+
+1. As OSM can be a big competitor for Google hence this should have more detail information about popular and tourist places in the city.
+
+2. OSM should build a validation system which checks for data consistency of street name and other details, and while contributing data it should suggest details of that place to contributors so that people should follow the standard details. 
+
+3. In order to make OSM data more accurate and cleansed ,they should implement some automation process which should check for data inconsistencies and data standards based on certain rules.
+
+Since OSM data has been contributing by humans and it can have many data issues including bad data so my suggestion to spend more time on data wrangling before doing data analysis as this can help us to make our analysis more accurate and robust. 
+
 
 ## Files used:
 
