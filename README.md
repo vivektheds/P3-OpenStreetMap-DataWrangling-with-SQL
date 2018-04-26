@@ -552,8 +552,6 @@ Since OSM data has been contributing by humans and it can have many data issues 
 2. **LA OSM database.ipynb:**- build CSV files from OSM and build database of the CSV files with the repective table names.
 3. **README.md:**- contains details on the data wrangling and analysis process.
 4. **LosAngeles.db:**- database file which is used to load schema into database.
-5. **All CSV Files:**- nodes.csv, nodes_tags.csv,ways.csv,ways_nodes.csv and ways_tags.csv are CSV files which are transformed                          from OSM xml data then these files are used to create db schema.
-
 5. **LA_sample.zip:**- An .osm file containing a sample part of the LA map which I used.
 
 
